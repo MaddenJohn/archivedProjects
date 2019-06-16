@@ -1,0 +1,24 @@
+12/2
+-Added starter_shea
+-Tweaked sharter_shea, stopped using image as input
+
+
+Paper Info:
+
+Started with a CNN based on hw10. At each step, it used the current frame and state to predict the future state for each possible valid action.
+Then, it scored each future state and picked the one that gave the best score. This seemed to train slowly, and it easily got stuck into
+just going forward and not learning to turn.
+
+Next, to try to diversify it's training data, I added rounds where instead of picking the best future state, it sometimes randomly picked one.
+While this seemed to help a little, it didn't work to the extent I was hoping for.
+
+The thing that most seemed to help the CNN was creating an effective scoring function. For instance, you want to keep Tux on the track and
+facing forward, so penalizing both distance_to_center and angle make sense. But you still want to encourage Tux to turn towards the track to
+right itself when it gets off. Therefor, angle should be penalized less than distance_to_center. Finding the right balance between all the
+variables allowed it to complete a lap for the first time.
+
+However, thinking about the hard-cording, I realized that the AI can make it through the lap using on conditions on the state. So why pass in the
+current frame into the CNN too? I next tried making a simple fully connected network passing in only the state. With only 8850 varibales, the network
+was able to quickly train and completed a full lap several times. My theory is that, while the frame can contain useful information, passing
+in both the frame and state provided too many vaiable to effectively train. The state contains the most useful information, but when it only makes
+up <.01% of the input, very little of the network actually ends up using it.

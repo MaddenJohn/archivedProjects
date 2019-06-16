@@ -1,0 +1,49 @@
+12-03-2017 CHANGES
+- Set up external data save and load, also set up loading in .tfg but I don't think this
+  is quite working yet. In effort of time efficiency this will be my last day working on
+  this although I did not have success in completing this method I do have ample 
+  material for the report.
+
+12-02-2017 CHANGES
+- Added some fully connected layers to my conv net which seems to have improved performance
+- Tried implementing capsule net, implementation was unfortunately designed only for MNIST
+  and did not recognize my network architecture. 
+
+TODO:
+- Change Idle steps to 70
+- Add counter for wrongway
+- Set position reward back to 1000, but weight it for wrong way
+- use wrongway counter to weight position
+- give position exponential reward
+
+12-01-2017 CHANGES
+- Tweaked genetic algorithms a bit, running a bit better but still not doing
+  that great. More changes needed
+- Also need to tweak parameters a bit more
+
+11-30-2017 CHANGES
+- Experimented with tweaking weights more
+- Added genetic properties to cross entropy method (still more work to do there)
+
+Current Weights
+SCORE_WEIGHTS = [-100, -0.1, 10, -1, 0.001, -0.005]
+
+Changes:
+- Also modified idle_step code
+  > Instead of resetting idle step to 0, do this instead:
+    idle_step -= 1
+    idle_step = max(0, idle_step)
+
+- Changed epoch survival rate to 40%
+- Changed #Epochs to 30
+- Kept samples per epoch at 5
+
+TODO Tomorrow
+- Attempt to integrate capsule net.
+
+To Think About
+- I don't believe enough information is being kept between sessions and that's the reason we see
+  such erratic behavior from tux.
+- Look into possibly using a genetic algorithm to pick the best state and create other states off
+  that vs just randomly creating new states each time.
+

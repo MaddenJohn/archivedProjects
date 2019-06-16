@@ -1,0 +1,83 @@
+- Introduction
+  > Neural Networks is similar to any field of computer science.
+    * Easy to get bogged down or distracted by trying to find an interesting or efficient 
+      solution
+      - What really matters is choosing the best tool for the job.
+  > For the final project, we decided to do independent research at the beginning and
+    then modify our approaches based on what worked and what didn't
+    * Many things were tried, and each member took a different approach to teaching tux to
+      drive.
+- Cross Entropy
+  > The first approach tried. Basically the solution to homework 10.
+  > We saw decent results with this on tux in homework 10 and so thought it would be a good
+    jumping off point for our project
+  > It quickly became apparent that this approach's convergence time was too slow to feasibly
+    rely on for the project. Given the lab computer's 1.5 hour program runtime limit additional
+    measures would need to be taken in order to attempt to train the network effectively. This 
+    lead us to split up to research other approaches independently and initially lead to us 
+    finding a more effective solution which worked within hardware limitations.
+- The genetic entropy approach
+  > Take the solution for homework 10 and add genetic aspects to it. Instead of pure random
+    weights, a mean of the best 2 or 3 survivors is passed back into the entropy function which
+    is then averaged with the random weight set generated from the mean and standard deviation.
+    Rewards and penalties were also applied to the to the rank returned from the score function 
+    in order to weed out ineffective parameter sets and bias effective ones. The main drive
+    with this approach was to try to speed up the convergence rate for the cross entropy
+    method.
+  > This was based ideas in biology. Primarily that when two individuals of a species mate, 
+    their offspring could be seen as the mean of the original individuals characteristics. The
+    hope was that by basing generation on the strongest parameter set that if a weak parameter
+    set were generated, that the stronger set would balance out the weaker set causing 
+    faster convergence.
+  > This approach showed a significant amount of progress and we continued looking into it
+    as late as Dec. 3rd. However, problems arose around the 1.5 hour limitation on the lab
+    machines for program run time. i.e. in order to make significant progress, a large number
+    of samples per epoch were needed in order to ensure that "good" samples were actually
+    good an not simply the least negative sample. Problems began to arise as we attempted to
+    save and re-open the .tfg file for consecutive runs and due to time constraints and the 
+    emergence of a more effective policy this was finally abandoned.
+- Imitation Learning
+  > We ended up with a hard-coded soltuion and also found a way to pull the data for the NPC
+    kart's actions. This lead us to attempt a form of imitation learning where we would pass
+    in a set of actions which completeted the track as the labels to our network and then 
+    use that to train our agent using a conv. net.
+  > This seemed very promising in the beginning because while it would overfit horribly to the
+    track we were running on, it would reduce the problem at hand to a simple classification 
+    problem vs. one which required more complex agents such as a segmentation agent or an
+    action prediction agent. In short, the problem is reduced to just perform action a at time
+    t to complete the track. This would be much like a blind person playing a game and having
+    someone tell the person which button to press at a given time in order to complete the game.
+  > While this seemed promising in theory, the practical application was somewhat lacking. Tux
+    simply learned to perform a single action i.e. accellerate because it ended up giving him
+    enough of a reward to avoid doing other actions which might risk negative points. The 
+    problem was that not enough information was being given to tux in order to accurately 
+    allow him to learn which actions to take. This approach was a good reminder that humans
+    and machines learn differently and this approach was abandoned with the emergence of 
+    a more efficient policy.
+- Conv Net + Fully Connected Net
+  > Found out that while the image representing the current frame can be useful, the state is
+    much more useful for providing information to Tux.State is weighted so by passing the 
+    state there's a 1:1 relationship between what tux is doing and what reward is gotten. 
+  > Evolution of this idea, use a fully connected net for the state and a conv net for the 
+    image. Then concatenate the results to help tux select an action.
+  > Ended up having a very fast training time and also provided to be very effective on the
+    lighthouse map. Some training episodes even resulted in Tux completing all 3 laps. This
+    approach was also much more simplistic to pass back in since it only requires a single
+    output .tfg instead of multiple reloads.
+- Conclusion
+  > The environment in which you train your agent can be just as important as the architecture
+    itself.
+  > Learned that some approaches, while interesting or efficient may not fit within the scope
+    of the environment.
+    * Real challenge was trying to find a solution which worked within the storage and runtime
+      constraints on the lab machines.
+  > Were successful and found a policy which worked and in the process learned much more about
+    the concepts discussed in class as well as about designing effective deep learning
+    architectures in a limited runtime environment.
+* BODY PARAGRAPH FORMAT
+- What we tried
+  > General idea
+  > Why we thought it would work
+  > Did it work?
+    * If yes, why did it work
+    * If no, why didn't it work or what issues lead to abandoning the project

@@ -1,0 +1,56 @@
+In main I added a function getAction() to calculate the action, which works by always correctly according to the angle and the distance to center. 
+
+In replicate I again used angle and distance to center to correct for some of the action choices, which is currently overriding about 50% of the actions predicted by the network. However, with this modification in the specialCases() function it is possible for the kart ai to finish laps. One action I think was key was adding save to the specialCases(), so that for whenever tux is going the wrongway or is stuck I trigger the save action so a bird picks him up and places him on the track again. I kept idle steps as is because with subtracting there wasn't enough idle steps for when tux ran into problems or had to use a save. 
+
+
+12/1
+
+Added imitation learning data as well as attempted to implement imitation learning. Still a work in progress. The record.py file is used to record data. Also removed extra replicate.py python files.
+
+12/2
+Added imitation learning based on Shea's model. Also tried testing starter_shea with special cases to get tfg graphs, seen in the tfg graphs folder.
+
+12/3
+Finished test.py which can be used to test the starter_basedOnShea.py which was the file used to create all of the tfg files in the tfg_graphs folder. 
+
+
+
+
+
+
+Information to use for Paper: 
+
+Things I have tried:
+
+Cross Entropy Learning:
+This was the first thing I tried for this project, which was directly based on
+homework 10. This replica worked in the same general manor, which was to take 
+only the top percentage of policies from a group of samples and use this as the
+new baseline in the next samples that are selected. Theoretically, this should
+have been able to work with supertuxkart too, but unfortunately the results were
+skewed, with most of the time supertuxkart turning to the left and hitting a wall. 
+
+
+Imitation Learning:
+First, in order to get the data for this, an AI had to be created. This
+AI has a simple method of either turning left or right in order to maintain
+position on the track. This was found to be the most effective way in order to
+get the data from supertuxkart. With this data, I then used the recorded data of 
+input as well as position along track as a validation label which would be used
+for the loss functions in my CNN policy. The end result of this was bad, because
+supertuxkart learned that the best policy was only to use the action 4, or go 
+straight.
+
+
+Fully connected Layers + Convolutional networks:
+This was the last thing I tried was using an approach of using fully connected layers 
+based on the state variables and concatenating convolutional networks with the image.
+This approach has a very fast training time, and also proved to be effective on
+the lighthouse map. In some training episodes we even had supertuxkart complete
+multiple laps. 
+
+
+
+
+
+
