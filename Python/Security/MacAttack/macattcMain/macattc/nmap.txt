@@ -1,0 +1,10 @@
+# Nmap 7.60 scan initiated Thu May  3 18:11:51 2018 as: nmap -sn -v0 -oN nmap.txt 192.168.1.14/24
+Nmap scan report for www.routerlogin.com (192.168.1.1)
+Host is up (0.0055s latency).
+MAC Address: 2C:30:33:38:19:A0 (Netgear)
+Nmap scan report for 192.168.1.2
+Host is up (0.37s latency).
+MAC Address: AC:2B:6E:2A:1F:2F (Intel Corporate)
+Nmap scan report for 192.168.1.14
+Host is up.
+# Nmap done at Thu May  3 18:12:21 2018 -- 256 IP addresses (3 hosts up) scanned in 29.88 seconds

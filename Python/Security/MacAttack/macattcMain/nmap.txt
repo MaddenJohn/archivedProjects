@@ -1,0 +1,76 @@
+# Nmap 7.60 scan initiated Wed May  2 18:58:11 2018 as: nmap -sn -v0 -oN nmap.txt 172.16.1.89/24
+Nmap scan report for 172.16.1.1
+Host is up (0.0020s latency).
+MAC Address: 88:F0:31:A3:53:F8 (Cisco Systems)
+Nmap scan report for 172.16.1.12
+Host is up (0.19s latency).
+MAC Address: 98:5F:D3:ED:30:34 (Microsoft)
+Nmap scan report for 172.16.1.14
+Host is up (0.0029s latency).
+MAC Address: 00:1F:5B:F3:A2:F0 (Apple)
+Nmap scan report for 172.16.1.16
+Host is up (0.0015s latency).
+MAC Address: D8:38:FC:0F:DA:A0 (Ruckus Wireless)
+Nmap scan report for 172.16.1.18
+Host is up (0.098s latency).
+MAC Address: 00:1E:C2:C3:03:FB (Apple)
+Nmap scan report for 172.16.1.21
+Host is up (0.093s latency).
+MAC Address: B4:8B:19:4D:09:16 (Apple)
+Nmap scan report for 172.16.1.29
+Host is up (0.10s latency).
+MAC Address: 70:70:0D:0F:66:40 (Apple)
+Nmap scan report for 172.16.1.33
+Host is up (0.0023s latency).
+MAC Address: 00:11:62:06:A0:9F (Star Micronics)
+Nmap scan report for 172.16.1.44
+Host is up (0.062s latency).
+MAC Address: 48:D7:05:E8:7C:15 (Apple)
+Nmap scan report for 172.16.1.49
+Host is up (0.084s latency).
+MAC Address: 9C:B6:D0:D6:5E:3B (Rivet Networks)
+Nmap scan report for 172.16.1.54
+Host is up (0.16s latency).
+MAC Address: F4:5C:89:CB:FE:0F (Apple)
+Nmap scan report for 172.16.1.56
+Host is up (0.0020s latency).
+MAC Address: 00:11:62:07:3B:BB (Star Micronics)
+Nmap scan report for 172.16.1.57
+Host is up (0.066s latency).
+MAC Address: A4:70:D6:CD:89:F9 (Motorola Mobility, a Lenovo Company)
+Nmap scan report for 172.16.1.59
+Host is up (0.086s latency).
+MAC Address: C4:B3:01:9F:AE:AE (Apple)
+Nmap scan report for 172.16.1.62
+Host is up (0.088s latency).
+MAC Address: 3C:15:C2:E1:AB:28 (Apple)
+Nmap scan report for 172.16.1.68
+Host is up (0.0085s latency).
+MAC Address: 9C:B6:54:5C:5C:AD (Hewlett Packard)
+Nmap scan report for 172.16.1.69
+Host is up (0.12s latency).
+MAC Address: B4:AE:2B:3B:B2:7F (Microsoft)
+Nmap scan report for 172.16.1.77
+Host is up (0.080s latency).
+MAC Address: 98:E0:D9:87:89:7F (Apple)
+Nmap scan report for 172.16.1.82
+Host is up (0.0025s latency).
+MAC Address: 00:11:62:07:3C:52 (Star Micronics)
+Nmap scan report for 172.16.1.91
+Host is up (0.065s latency).
+MAC Address: 9C:B6:D0:E5:E6:7D (Rivet Networks)
+Nmap scan report for 172.16.1.100
+Host is up (0.14s latency).
+MAC Address: A0:99:9B:03:68:43 (Apple)
+Nmap scan report for 172.16.1.105
+Host is up (0.16s latency).
+MAC Address: 48:BF:6B:E4:12:82 (Apple)
+Nmap scan report for 172.16.1.114
+Host is up (0.17s latency).
+MAC Address: 54:26:96:D1:49:AF (Apple)
+Nmap scan report for 172.16.1.119
+Host is up (0.078s latency).
+MAC Address: 68:A8:6D:1F:3B:2A (Apple)
+Nmap scan report for 172.16.1.89
+Host is up.
+# Nmap done at Wed May  2 18:58:15 2018 -- 256 IP addresses (25 hosts up) scanned in 4.08 seconds
