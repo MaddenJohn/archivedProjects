@@ -1,0 +1,83 @@
+10/6, 3:00p - 6:00p, Alec and Jose, 3 hours
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+
+10/7, 1:00p - 5:30p, Alec and Jose, 4.5 hours
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+
+10/14, 1:00p - 6:00, Alec and Jose, 5 hours
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+
+10/15, 3:00p - 7:00p, Alec and Jose, 4 hours
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+
+10/16, 1:00p - 5:00p, Alec and Jose, 4 hours
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+
+10/17, 12:00a - 6:00p, Alec and Jose, 6 hours
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+
+10/19, 1:00p - 5:00p, Alec and Jose, 4 hours
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+
+
+10/22, 3:30p - 7:30p, Alec and Jose, 4 hours
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes
+Alec, 30 minutes
+Jose, 30 minutes

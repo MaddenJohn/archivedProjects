@@ -1,0 +1,62 @@
+CS 429 Homework 11
+Name: Jonathan Madden 
+Section #:50645
+
+1. Question 6.23.
+6.005 ms
+
+
+2. Question 6.28.
+
+A) zero hits 
+
+B) 
+18F0
+18F1
+18F2
+18F3
+00B0
+00B1
+00B2
+00B3
+
+C)
+0E34
+0E35
+0E36
+0E37
+
+D) 
+1BDC
+1BDD
+1BDE
+1BDF
+
+3. Question 6.29.
+A)
+
+   CT CT CT CT CT CT CT CT 	   	CI CI 	CO CO  			   	
+12 11 10  9  8  7  6  5  4  		 3  2 	 1  0
+
+B)
+Read	0x834	miss	unknown
+Write	0x836	hit	unknown	
+Read	0xFFD	hit	C0
+
+
+4. Question 6.30.
+A) 128 bytes
+B) 
+
+CT CT CT CT CT CT CT CT 	CI CI CI 	CO CO  			   	
+12 11 10  9  8  7  6  5  	 4  3  2 	 1  0
+
+
+5. Question 6.36.
+A) miss rate = 100%
+B) miss rate = 25% 
+C) miss rate = 25%
+D) No, the cache increasing in size adds more sets but this would not actually decrease the rate. 
+E) Yes, by increasing the block size you can effectively decrease the misses
+because more will be stored in each line. 
+

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6A1BC2EB132615F96BE54EFD37E584F36C9AC23F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6A1BC2EB132615F96BE54EFD37E584F36C9AC23F" : 9223372036854775807,
+    "289D10B378288C8C51797EC448FF644206D92078" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "898835B9-A9D4-455A-B311-24FAD9A21152",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6A1BC2EB132615F96BE54EFD37E584F36C9AC23F" : "nessie-ios-sdk-swift\/",
+    "289D10B378288C8C51797EC448FF644206D92078" : "Nessie-iOS-Wrapper"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Nessie-iOS-Wrapper",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Nessie-iOS-Wrapper.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nessieisreal\/nessie-ios-sdk-swift2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "289D10B378288C8C51797EC448FF644206D92078"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nessieisreal\/nessie-ios-sdk-swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6A1BC2EB132615F96BE54EFD37E584F36C9AC23F"
+    }
+  ]
+}

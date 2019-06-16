@@ -1,0 +1,93 @@
+CS 429 Homework 4
+Name: Jonathan Madden 
+Section #:50645
+
+1. Annotate the following Y86 code (add comments to each line) explaining what the
+line accomplishes. The two arguments are passed in %rdi and %rsi, respectively.
+proc:
+	irmovq $0, %rax			set %rax to the constant 0
+	irmovq $1, %r9			set %r9 to the constant 1
+	rrmovq %rdi, %r8		set%r8 to the registrar %rdi, which was the first parameter
+	andq %r8, %r8			check to see if %r8 is zero
+	je done				jumps to done if %r8 is zero, else goes to loop
+loop:
+	addq %rsi, %rax			adds  2nd parameter to %rax, the result
+	subq %r9, %r8			subtract %r9, which is 1 to &r8
+	andq %r8, %r8			check to see if %r8 is zero
+	jne loop			if %r8 is not zero, jump back to loop
+done:
+	ret				finish program and return %rax
+
+2. Explain what function is computed by the code above. Are there any constraints
+on the parameters? (Will it work for arbitary integer inputs?)
+This program multiplies rdi and rsi as long as %rdi, the first parameter, is positive.
+
+3. Write a C function that might compile into the above code.
+
+int multiply(int x, int y){
+	int res = 0;
+	int k;
+	for(k=x;k>;k--)	
+		res+=y;
+	return res;
+}
+
+4. Assuming that proc is at location 0x100, determine the Y86 byte encoding for the
+Y86 program. For each statement, list address: code bytes.
+
+proc:
+	irmovq $0, %rax		0x100	30 F0 00 00 00 00 00 00 00 00		
+	irmovq $1, %r9		0x10A	30 F9 10 00 00 00 00 00 00 00
+	rrmovq %rdi, %r8	0x114	20 78
+	andq %r8, %r8		0x116	62 88
+	je done			0x118	73 30 01 00 00 00 00 00 00
+loop:				0x121
+	addq %rsi, %rax		0x121	60 60
+	subq %r9, %r8		0x123	61 98
+	andq %r8, %r8		0x125	62 88
+	jne loop		0x127	74 21 01 00 00 00 00 00 00
+done:				0x130
+	ret			0x130	90
+
+5. Consider the circuit above. First, write a C expression E that describes the output
+Q in terms of the three inputs, A, B, and C. Then, write, compile, and execute a
+C function that prints the truth table for this circuit, including the outputs of each
+of the intermediate gates (which I’ve labeled as W, X, Y , and Z). You must use
+your expression E to generate the outputs, not precompute them and just print the
+constants. Loop through the input value; i.e., don’t just call the expression 8 times.
+In fact, E should only appear once in your code, inside the loop body. Submit your
+code and the output, which should be similar to the following:
+A B C | W X Y Z | Q
+--------------------
+0 0 0 | 0 0 0 0 | 0
+0 0 1 | 0 1 0 0 | 0
+0 1 0 | 0 1 0 0 | 0
+0 1 1 | 0 1 1 1 | 1
+1 0 0 | 0 0 0 0 | 0
+1 0 1 | 0 1 0 0 | 0
+1 1 0 | 1 1 0 0 | 1
+1 1 1 | 1 1 1 1 | 1
+
+Expression E = (a&&b)||((b||c)&&(b&&c));
+
+void function(){
+int a,b,c;
+int w,x,y,z,e;
+printf("A B C | W X Y Z | Q\n-------------------\n");
+for(a=0;a<2;a++){
+	for(b=0;b<2;b++){
+		for(c=0;c<2;c++){
+		w=a&&b;
+		x=b||c;
+		y=b&&c;	
+		z=x&&y;
+		e=(a&&b)||((b||c)&&(b&&c));
+		printf("%d %d %d | %d %d %d %d | %d\n",a,b,c,w,x,y,z,e);	
+		}
+	}
+}
+
+
+}
+
+

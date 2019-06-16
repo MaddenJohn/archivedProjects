@@ -1,0 +1,101 @@
+CS 429 Homework 5
+Name: Jonathan Madden 
+Section #:50645
+
+long array[] = {0xd, 0xc0, 0xb00, 0xa000, 0};
+/* Count elements in null-terminated list */
+long len1( long a[] )
+{
+long len;
+for (len = 0; a[len]; len++ );
+return len;
+}
+main()
+{
+long ans;
+ans = len1( array );
+printf( "Answer: %ld\n", ans );
+}
+
+
+1. Assemble this code to generate x86-64 assembly language with minimal optimization
+(-Og). Annotate the assembly with comments. Now, using the code examples
+from the slides and book, imagine that you compiled this for the Y86. (You don’t
+have to actually do that). But speculate what substantive differences you’d see
+between the Y86 and x86-64 code. Please delete the assembler directives, other
+than .pos, .quad, .string, and labels.
+
+len1:
+.LFB0:
+    movl    $0, %eax			//assign %eax to 0
+    jmp    .L2				//jump to label L2
+.L3:
+    addq    $1, %rax			//add 1 to %rax (result)
+.L2:
+    cmpq    $0, (%rdi,%rax,8)		//compare the value stored at (%rdi+8*%rax)
+    jne    .L3				//if this comparison doesnt equal 0 jump to L3, loops
+    rep ret				//single byte return instruction
+.LFE0:
+.LC0:
+    .string    "Answer: %ld\n"		//constant string to be used for the answer
+main:
+.LFB1:
+    subq    $8, %rsp			//subtract 8 from the stack pointer
+    movl    $array, %edi		//assign the constant array to %edi
+    call    len1			//jumpt to len1 and do its operations, then come back
+    movq    %rax, %rsi			//assign %rsi to %rax
+    movl    $.LC0, %edi			//assign the result string to %edi
+    movl    $0, %eax			//assign 0 to %eax
+    call    printf			//print the answer
+    addq    $8, %rsp			//add 8 to the stack pointer
+    ret					//return %rax, representing the length of %rdi, an array
+.LFE1:
+array:
+    .quad    13				//add value to the array
+    .quad    192			//add value to the array
+    .quad    2816			//add value to the array
+    .quad    40960			//add value to the array
+    .quad    0				//add value to the array
+
+Some of the differences you would see in this code rather than Y86 is the different names in the instructions but
+more specifically instructions such as cmpq    $0, (%rdi,%rax,8) are non existent in Y86, so it would require
+temporary storage in other variables as well as other operations in order to do the compare. 
+
+
+2. Now assemble it again with higher optimization (-O2). Compare the two compilations.
+What differences do you observe when the optimization is more advanced?
+
+When the optimization is more advanced the use of xorl to set the counters to zero as well as
+the use of .p2allign is used in order to save memory. The structure is also different with two
+looping mechanisms as well as more label structures. 
+
+3. Do problem 3.58 on p. 311.
+long decode2(long x,long y,long z){
+	y-=z;
+	x*=y;
+	y = (y<<63)>>63);
+	return y^x;
+}
+
+4. Do problem 3.60 on p. 312 of Bryant and O’Hallaron. Fill in both the missing code
+and answer parts A–F.
+
+long loop(long x,long n){
+	long result = 0;
+	long mask;
+	for(mask = 1;mask!=0;mask= mask<<(n&0xFF)){
+		result|=x&mask;
+	}
+	return result;
+}
+
+A. x in %rdi, n in %esi, result in %rax and mask in %rdx(%edx)
+B. result = 0. mask = 1.
+C. mask!=0
+D. left shift by n
+E. current result or (x&mask)
+F. filled above
+
+
+
+

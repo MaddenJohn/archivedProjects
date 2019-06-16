@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-Nessie-iOS-Wrapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Nessie-iOS-WrapperTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-NessieTestProj.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-NessieTestProjTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3CBE93354BA3A87F9BF6D10E510EEF61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50CABAE9FA14EC6FEE085D61886FEB88</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>67C4FD0E66A87108CB15AADABAFC8FD2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CDA8758624DF451FC0FC03C9A4D6416E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EBA3F9A24C654170CEA1518B66C7F012</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

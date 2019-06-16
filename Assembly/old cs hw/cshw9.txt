@@ -1,0 +1,56 @@
+CS 429 Homework 9
+Name: Jonathan Madden 
+Section #:50645
+
+Consider the following Y86 code fragment:
+irmovq $3, %rax
+irmovq $4, %rbx
+addq %rax, %rbx
+
+(a) Explain carefully the data dependency problem for the naive pipelined implementation
+(without data forwarding) of the Y86 we’ve been discussing. Be
+sure to say at which stages of the naive pipeline, the values of %eax and %ebx
+are needed by the addl statement and at which they become available.
+
+The data dependency problem for this Y86 is that the values %rax and %rbx are both still being processed and can't
+be used by addq until they are at the write stage. In a pipeline this causes a hazard because you now have to either
+use something like a nop or bubble to fix this problem. For this piece of code, the addl statement needs the value of
+rbx (4) which will be from the write stage and the value of rax (3) from the write stage to the fetch stage of the addl
+instruction. However, this only becomes available when they each are at the write stages. 
+
+(b) Insert the minimum number of nop’s into the code to resolve the problem.
+irmovq $3, %rax
+irmovq $4, %rbx
+nop
+nop
+nop
+addq %rax, %rbx
+
+(c) Explain the introduction of stalls and bubbles into the pipeline to resolve the
+problem without explicit nop’s.
+
+By using stalls and bubbles into the pipeline this implicitly makes a nop in the actual hardware and prevents the 
+progression of the other instructions. This means that whenever a condition is met or an instruction that requires 
+previous data is met then the program will have these bubbles in place of nop. The bubble is representative of the 
+empty data which results from the instructions beings stalled.
+
+(d) Explain how adding data forwarding to the pipeline solves the problem. Be
+explicit about what values are forwarded and from what stages of the pipeline.
+
+Data forwarding allows data to be forwarded earlier to decode than the write stage to when an instruction calls
+for data in previous instructions. This prevents hazards and allows the program to go faster. The values to be forwarded
+would be 4 from %rbx and 3 from rax, with  rax from memory and rbx from execute stages to be forwarded to the decode 
+stage. There they can then be used. 
+
+2. Do problem 6.22 on p. 649 of Bryant and O’Hallaron.
+num bits on track constant. num bits per track determined by circumference of innermost track/hole. 
+# bits = 2xr(pi)
+#tracks = r-xr
+(#tracks*#bits)= 2x(r^2)(pi)-2(x^2)(r^2)(pi)
+d/dx((#tracks*#bits))=2(pi)(r^2) - 4x(r^2)pi = 0
+x = 1/2
+
+
+3. Do problem 6.24 on p. 649 of Bryant and O’Hallaron.
+A)Best Case = T(avgseek) + T(avg rot) + 2T(maxrot)= 4 + 2 + 4(4) = 22ms
+B)Random case = T(avgseek)+T(avg rot) = 6 * 4000 = 24000ms = 24 seconds

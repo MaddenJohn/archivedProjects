@@ -1,0 +1,38 @@
+CS 429 Homework 7
+Name: Jonathan Madden 
+Section #:50645
+
+1. Write an x86-64 assembly language routine that will take four longs (x, y, z, w)  (%rdi,%rsi,%rdx,%rcx)
+and perform double precision addition. That is, treat xy as one 128-bit integer and
+zw as another. Write the code to return a 128-bit result. You can return the result
+in %rbx and %rax. Don’t forget to carry out of the low result word into the high
+word. (upper 64  in rbx and lower 64 in rax)
+ 
+addq 	%rdi, %rdx
+movq 	%rdx, %rbx
+addq 	%rsi,%rcx
+cmpq 	%rsi,%rcx
+jg	.NC
+addq 	$1 %rbx
+.NC:
+movq	%rcx,rax	
+ret
+
+2. What is an x86 leave statement used for? Why might you prefer it to the two
+statement sequence we’ve been using for the same purpose?
+
+The leave statement acts as a built-in struction to perform both movl %ebp, %esp 
+and popl %ebp which are essential for resetting the stack. I would prefer to use 
+it because it makes the code easier to read and is built-in so there won't be any 
+mistakes.
+
+3. Do problem 3.65 on p. 317 of Bryant and O’Hallaron.
+
+A. %rdx holds A[i][j].
+B. %rax holds A[j][i].
+C. M = 15.
+
+4. Do problem 3.68 on p. 320 of Bryant and O’Hallaron.
+
+A = 9
+B = 5

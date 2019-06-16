@@ -1,0 +1,51 @@
+CS 429 Homework 10
+Name: Jonathan Madden 
+Section #:50645
+
+1. Assume we have a functional unit (non-pipelined) that can do one operation every
+100 nanoseconds. For this base system:
+(a) What is its latency?  100 ns
+(b) What is its throughput? 0.010 GIPS
+
+
+2. Suppose we then break it into 5 stages. Each stage takes 20 nanoseconds, plus 5
+nanoseconds to latch the registers between stages, and we can run it as a 5 stage
+pipeline.
+(a) What is its latency? 125 ns
+(b) What is its maximum throughput? 0.04 GIPS
+(c) What is its actual throughput, if we always and only have 3 operations that
+we can pipeline at one time. (So 3 operations, then flush the pipe; then 3
+more, then flush the pipe)? 0.01714 GIPS
+
+
+3. Suppose we have the same 5 stage pipeline, but we have a dependency between
+stage 4 and stage 2, so that an input for stage 2 for operation i+1 is the output of
+stage 4 for operation i.
+(a) What is its latency? 225 ns
+(b) What is its maximum throughput? 0.01333 GIPS
+
+
+4. Consider the following code:
+
+int sumarray3d( int a[N][N][N] )
+{
+int i, j, k, sum = 0;
+for ( i = 0; i < N; i++ )
+	for ( j = 0; j < N; j++ )
+		for ( k = 0; k < N; k++ )
+			sum += a[k][i][j];
+return sum;
+}
+
+One could permute the loops in each of 6 ways: ijk, jik, etc. Each has a stride-n
+reference pattern, for differing n. State what n is for each version. Don’t worry
+about the size of ints. That is, the stride is the number of elements, not the number
+of addresses.
+
+ijk: n^2
+ikj: 1
+jik: n^2
+jki: n
+kij: 1
+kji: n
+

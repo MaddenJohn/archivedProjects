@@ -1,0 +1,87 @@
+CS 429 Homework 8
+Name: Jonathan Madden 
+Section #:50645
+
+
+1. Do problem 3.69 on p. 321 of Bryant and O’Hallaron.
+
+A) CNT = 7
+
+B)
+typedef struct{
+long idx;
+long x[4];
+}a_struct;
+
+2. Do problem 3.70 on p. 322 of Bryant and O’Hallaron.
+
+A) offset in bytes of following fields
+e1.p = 0
+e1.y = 4 
+e2.x = 0
+e2.next = 4 
+
+B) How many total bytes does the structure require?
+8 bytes
+
+C) fill in missing code for proc. 
+void proc (union ele *up){
+up->e2.next->e1.y = *(up->e2.next->e1.p) - up->e2.x;
+}
+
+
+3. Do problem 4.45 on p. 473 of Bryant and O’Hallaron.
+
+A) Does this correctly describe behavior of pushq %rsp? Explain.
+No, there could be something in between the two operations that change the value on the stack.
+
+B) How could I rewrite this so it correctly describes both cases where REG is %rsp as well as any other register?
+leaq -8(%rsp), %rsp 
+movq 8(%rsp), REG
+
+4. Do problem 4.47 on p. 474 of Bryant and O’Hallaron.		
+
+
+A) write C code version using pointers rather than arrays
+void bubble_p(long *data, long count){
+long i,last;
+for(last = count-1;last>0;last--){
+	for(i = 0;i<last;i++){
+		if(*(data+(i+1))<*(data+i)){
+			long t = *(data+(i+1));
+			*(data+(i+1))=*(data+i);
+			*(data+i)=t;
+		}
+	}
+}
+}
+
+B) write Y86 verson of this C code
+
+bubble_p:
+	subq	$1, %rsi
+	xorq 	%rsi, %rsi
+    	jle	.L4
+     .L1:
+     	xorl	%eax, %eax
+     .L2:
+ 	rrmovq	8(%rdi,%rax,8), %rdx
+	rrmovq	(%rdi,%rax,8), %rcx
+	pushq 	%rdx
+	subq 	 %rcx, %rdx
+	popq  	%rdx
+     	jge	.L3
+ 	rrmovq	%rcx, 8(%rdi,%rax,8)
+	rrmovq	%rdx, (%rdi,%rax,8)
+     .L3:
+ 	addq	$1, %rax
+   	pushq 	%rax
+	subq  	%rsi, %rax
+	popq  	%rax
+    	jl	.L2
+	subq	$1, %rsi
+     	jne	.L1
+     	ret
+     .L4:
+    	ret
+

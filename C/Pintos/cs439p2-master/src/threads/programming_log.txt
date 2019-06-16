@@ -1,0 +1,64 @@
+2/16, 4:30pm - 6:40pm Kirsten, John, and Matthew, 2.167 hours
+Driver Order and Time Length:
+Kirsten, 45 minutes
+John, 35 minutes
+Matthew, 35 minutes
+Kirsten, 15 minutes
+
+2/17, 2:50pm - 6:15pm Kirsten, John, and Matthew, 3.417 hours
+Driver Order and Time Length:
+John, 40 minutes
+Kirsten, 35 minutes
+Matthew, 40 minutes 
+John, 30 minutes
+Kirsten, 30 minutes 
+Matthew, 30 minutes
+
+2/18, 4:00pm - 5:15pm, Kirsten, John, and Matthew, 1.25 hours
+Driver Order and Time Length:
+John, 40 minutes
+Matthew, 30 minutes
+Kirsten, 35 minutes
+
+2/18, 9:30pm - 10:30 pm, Kirsten and John, 1 hour
+Driver Order and Time Length:
+Kirsten, 30 minutes
+John, 30 minutes
+
+2/19, 3:30pm - 9:30pm, Kirsten, John, and Matthew, 6 hours
+Driver Order and Time Length:
+Kirsten, 30 minutes
+Matthew, 30 minutes
+John, 30 minutes
+Matthew, 30 minutes
+Kirsten, 30 minutes
+John, 30 minutes
+Matthew, 30 minutes
+Kirsten, 30 minutes
+John, 30 minutes
+Matthew, 30 minutes
+Kirsten, 30 minutes
+John, 30 minutes
+
+2/20, 1:00pm - 9pm, Kirsten, John, and Matthew, 8 hours 
+Driver Order and Time Length:
+John, 30 minutes
+Kirsten, 30 minutes
+Matthew, 30 minutes
+John, 30 minutes
+Kirsten, 30 minutes
+Matthew, 30 minutes
+John, 30 minutes
+Matthew, 30 minutes
+
+2/25, 3:30pm - 6:30 pm, Kirsten, John, and Matthew, 3 hours
+Driver Order and Time Length:
+John, 30 minutes
+Matthew, 30 minutes
+Kirsten, 30 minutes
+John, 30 minutes
+Matthew, 30 minutes
+Kirsten, 30 minutes
+
+
+

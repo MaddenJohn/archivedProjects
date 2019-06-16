@@ -1,0 +1,46 @@
+--@(#) script.ddl
+ 
+CREATE TABLE Employee
+(
+	lastName varchar2 (25),
+	jobTitle varchar2 (25),
+	department varchar2 (25),
+      payGrade integer,
+	id_Employee integer,
+	fk_Employeeid_Employee integer,
+	PRIMARY KEY(id_Employee),
+	FOREIGN KEY(fk_Employeeid_Employee) REFERENCES Employee (id_Employee) 
+      ON DELETE CASCADE
+); 
+
+
+a) ON DELETE SET NULL
+b) ON DELETE CASCADE 
+c) 
+
+CREATE TRIGGER updateJT
+AFTER UPDATE OF jobTitle ON Employee
+REFERENCING
+	NEW AS newRow
+	OLD AS oldRow
+FOR EACH ROW
+WHEN(newRow.payGrade<=oldRow.payGrade)
+BEGIN
+	UPDATE Employee
+	SET fk_Employeeid_Employee (SELECT oldRow fk_Employeeid_Employee;
+END;
+/
+
+INSERT INTO Employee Values ('Fenves','President','(UT)',1,1,NULL);
+INSERT INTO Employee Values ('Hicke','Dean','(Natural Sciences)',2,2,1);
+INSERT INTO Employee Values ('Wood','Dean','(Engineering)',2,3,1);
+INSERT INTO Employee Values ('Porter','Chairman','(Computer Science)',3,4,2);
+INSERT INTO Employee Values('Beckner','Chairman','(Mathematics)',3,5,2);
+INSERT INTO Employee Values ('Miranker','Professor','(Computer Science)',4,6,4);
+INSERT INTO Employee Values ('Mok,','Professor','(Computer Science)',4,7,4); 
+
+
+
+CREATE SEQUENCE Employee_SEQ;
+   ---SKIPPED: Class REMOVED_BY_CUSTOM_TRANSFORMATION
+    

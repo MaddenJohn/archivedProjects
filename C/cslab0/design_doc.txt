@@ -1,0 +1,134 @@
+################
+YOUR INFO
+################
+Name1: Jonathan Madden
+EID1: jm76685
+CS login: jm76685
+Email: jm76685@utexas.edu
+Unique Number: 51075
+
+Slip days used: 0
+
+****EACH student submits a (unique) design document.****
+
+################
+YOUR PARTNER'S INFO
+################
+Name2: Veronica Gunn
+EID2: vg5652
+CS login: vfgunn
+Email: vfgunn@utexas.edu
+Unique Number: 51075
+
+Your partner's ranking (scale below): Excellent
+
+################
+PARTNER EVALUATION SCALE
+################
+Excellent: Consistently went above and beyond - tutored others, carried
+more than his/her fair share of the load.
+
+Very Good: Consistently did what he/she was supposed to do, very well
+prepared and cooperative.
+
+Satisfactory: Usually did what he/she was supposed to do, minimally
+prepared and cooperative.
+
+Marginal: Sometimes failed to show up and/or rarely prepared.
+
+Deficient: Often failed to show up and/or rarely prepared.
+
+Unsatisfactory: Consistently failed to show up and/or unprepared.
+
+Superficial: Practically no participation.
+
+No Show: No participation at all.
+
+################
+Preliminaries
+################
+(1) If you have any preliminary comments on your submission, notes for
+  the TAs, or extra credit, please give them here.
+None
+
+(2) Please cite any offline or online sources you consulted while
+  preparing your submission, other than the Linux documentation,
+  course text, and lecture notes.
+None
+
+################
+Questions regarding Part 0
+################
+(1) How many child processes are created when doFib() begins with
+  an input of 5?  Show the return value for each child process, numbering
+  the processes beginning with 0 (the original process) and incrementing for
+  each child process.
+
+Process 0 returns 5.
+Process 1 returns 4.
+Process 2 returns 3.
+Process 3 returns 3.
+Process 4 returns 2.
+Process 5 returns 2.
+Process 6 returns 1.
+Process 7 returns 2.
+Process 8 returns 1.
+
+There are a total of 9 processes, 8 of which are child processes created when doFib() begins with an input of 5.
+
+
+(2) In part 0.3, which flavor of exec did you choose to use?  Why?
+We chose to use execv() because we could easily pass in the command line's
+first agument as the path for the child process. The command also properly
+overides the process and executes a new process from this path. 
+Execv also conveniently took the command line itself in the second argument
+to use in the second program. This means I could pass in aguments to a 
+program through the child process becauseI directly pass in the array 
+pointing to the arguments originally. 
+
+################
+Questions regarding Part 1
+################
+(1) In the provided utility function Signal(), what does the call to
+  sigaction() do?  Why was sigaction() used instead of signal()?
+The sigaction() function examines and changes a signal action. This is used when
+setting up a signal handler with a given signal. Using signal() has varied 
+results and it is recommended in general not to use it.
+The sigaction() function also keeps track of other variables due to it having
+more arguments and provides more functionability. 
+
+(2) What is the last assembly language instruction executed by the
+  signal handler function that you write?  (You may choose either signal
+  handler.)
+callq 
+
+(3) After the instruction identified in the previous question executes, 
+  what is the next assembly language instruction executed?
+jmpq
+
+(4) When the signal handler finishes running, it must restore all of
+  the registers from the interrupted thread to exactly their values
+  before the signal occurred. How is this done?
+The values that were previously stored in the stack are all moved back
+into their respective registers after jumping to the location all of these
+values are stored on the stack. 
+
+################
+Questions regarding Part 2
+################
+(1) In msh.c, we use three separate signal handlers to catch our signals. 
+  You can also use a single signal handler to catch all three signals.  Is
+  there a design advantage of one over the other?  Explain your answer.
+
+I think the design of three seperate handlers is better.
+First of all, for three separate signal handlers it is much easier
+to read and understand. If these were all combined into one
+signal handler then the code would be much more complex and since 
+both SIGINT and SIGSTP handlers were much simpler it makes since 
+to separate the code. SIGCHLD requires a great deal more in 
+complexity since it requires the reaping of terminated children. 
+One benefit of using a single handler would be that you wouldn't have
+to worry about any other signals interfering, since they would be blocked, but
+since we don't use threading in this program this isn't a huge benefit compared
+to the readability. 
+

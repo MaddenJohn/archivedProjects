@@ -1,0 +1,20 @@
+--@(#) script.ddl
+ 
+CREATE TABLE Employee
+(
+	firstName varchar2 (25),
+	lastName varchar2 (25),
+	phone varchar2 (25),
+	jobTitle varchar2 (25),
+	payGrade int,
+	id_Employee integer,
+	fk_Employeeid_Employee integer NOT NULL,
+	fk_Employeeid_Employee1 integer,
+	PRIMARY KEY(id_Employee),
+	UNIQUE(fk_Employeeid_Employee),
+	FOREIGN KEY(fk_Employeeid_Employee) REFERENCES Employee (id_Employee)
+); 
+  
+CREATE SEQUENCE Employee_SEQ;
+   ---SKIPPED: Class REMOVED_BY_CUSTOM_TRANSFORMATION
+    

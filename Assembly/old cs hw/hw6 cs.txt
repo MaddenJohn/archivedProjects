@@ -1,0 +1,82 @@
+CS 429 Homework 6
+Name: Jonathan Madden 
+Section #:50645
+
+Consider the following C code:
+int fun_for (int x, unsigned int p) {
+	int result;
+	for (result = 1; p != 0; p = p>>1) {
+		if (p & 0x1)
+			result *= x;
+		x = x*x;
+	}
+	return result;   //result = x^
+}
+
+
+1. What useful function does this code compute? You might compile and run it to
+help you figure this out.
+The code computes x^p
+
+2. Translate the code into an equivalent C function in which the FOR statement has
+been replaced by the goto versions as outlined in the slides (and book). I’d suggest
+first translating the FOR into a DO-WHILE form. (Earlier I said to also remove
+the IF statements; you don’t have to do that.)
+
+int fun_for (int x, unsigned int p) {
+	int result=1;
+	loop:
+		if (p & 0x1)
+			result *= x;
+		x = x*x;
+		p = p>>1;
+	if(p!=0) goto loop;
+	return result;  
+}
+
+3. Do a hand compilation of the code into x86-64 code after doing the transformations.
+(You can use gcc to help you see how it goes.)
+	fun_for:
+		movl $1,%eax
+		jmp .L3
+	.L1:
+		movl %esi,%edx
+		andl $1,%edx
+		testl %edx,%edx
+		je .L2
+		imull %edi,%eax
+	.L2:	
+		imull %edi,%edi
+		shrl $1,$esi
+	.L3:
+		testl %esi,%esi
+		jne .L1
+		ret 
+
+4. Do problem 3.63 on p. 314 of Bryant and O’Hallaron.
+
+long switch_prob(long x, long n){
+	long result = x;	
+	switch(n){
+ 	 case 60:
+ 	 case 62:
+ 	   result = 8*x;
+	   break;
+	  case 63:
+ 	   result = x;
+ 	   result >>= 3;
+	   break;
+	  case 64:
+	    result = x;
+	    result <<=4;
+	    result-=x;
+	    x=result;
+	  case 65;
+	    x*=x;
+	  case 61:
+  	  default:
+   	    result = x+75;
+	    break;
+	}
+	return result;
+}
