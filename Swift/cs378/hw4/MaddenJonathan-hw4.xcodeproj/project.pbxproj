@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF686D8F1E5934BF00CCBFAC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF686D8E1E5934BF00CCBFAC /* Person.swift */; };
+		EF686D911E5935FD00CCBFAC /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF686D901E5935FD00CCBFAC /* ContactTableViewController.swift */; };
+		EF686D931E59363C00CCBFAC /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF686D921E59363C00CCBFAC /* NameTableViewCell.swift */; };
+		EF686D951E59365100CCBFAC /* AddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF686D941E59365100CCBFAC /* AddressTableViewCell.swift */; };
+		EFC40CFF1E52844400251645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC40CFE1E52844400251645 /* AppDelegate.swift */; };
+		EFC40D011E52844400251645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC40D001E52844400251645 /* ViewController.swift */; };
+		EFC40D041E52844400251645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC40D021E52844400251645 /* Main.storyboard */; };
+		EFC40D061E52844400251645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC40D051E52844400251645 /* Assets.xcassets */; };
+		EFC40D091E52844400251645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC40D071E52844400251645 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF686D8E1E5934BF00CCBFAC /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		EF686D901E5935FD00CCBFAC /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		EF686D921E59363C00CCBFAC /* NameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
+		EF686D941E59365100CCBFAC /* AddressTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressTableViewCell.swift; sourceTree = "<group>"; };
+		EFC40CFB1E52844400251645 /* MaddenJonathan-hw4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MaddenJonathan-hw4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC40CFE1E52844400251645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFC40D001E52844400251645 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFC40D031E52844400251645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFC40D051E52844400251645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFC40D081E52844400251645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFC40D0A1E52844400251645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFC40CF81E52844400251645 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFC40CF21E52844400251645 = {
+			isa = PBXGroup;
+			children = (
+				EFC40CFD1E52844400251645 /* MaddenJonathan-hw4 */,
+				EFC40CFC1E52844400251645 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFC40CFC1E52844400251645 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFC40CFB1E52844400251645 /* MaddenJonathan-hw4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFC40CFD1E52844400251645 /* MaddenJonathan-hw4 */ = {
+			isa = PBXGroup;
+			children = (
+				EFC40CFE1E52844400251645 /* AppDelegate.swift */,
+				EFC40D001E52844400251645 /* ViewController.swift */,
+				EFC40D021E52844400251645 /* Main.storyboard */,
+				EFC40D051E52844400251645 /* Assets.xcassets */,
+				EFC40D071E52844400251645 /* LaunchScreen.storyboard */,
+				EFC40D0A1E52844400251645 /* Info.plist */,
+				EF686D8E1E5934BF00CCBFAC /* Person.swift */,
+				EF686D901E5935FD00CCBFAC /* ContactTableViewController.swift */,
+				EF686D921E59363C00CCBFAC /* NameTableViewCell.swift */,
+				EF686D941E59365100CCBFAC /* AddressTableViewCell.swift */,
+			);
+			path = "MaddenJonathan-hw4";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFC40CFA1E52844400251645 /* MaddenJonathan-hw4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFC40D0D1E52844400251645 /* Build configuration list for PBXNativeTarget "MaddenJonathan-hw4" */;
+			buildPhases = (
+				EFC40CF71E52844400251645 /* Sources */,
+				EFC40CF81E52844400251645 /* Frameworks */,
+				EFC40CF91E52844400251645 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MaddenJonathan-hw4";
+			productName = "MaddenJonathan-hw4";
+			productReference = EFC40CFB1E52844400251645 /* MaddenJonathan-hw4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFC40CF31E52844400251645 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = cs378;
+				TargetAttributes = {
+					EFC40CFA1E52844400251645 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EFC40CF61E52844400251645 /* Build configuration list for PBXProject "MaddenJonathan-hw4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFC40CF21E52844400251645;
+			productRefGroup = EFC40CFC1E52844400251645 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFC40CFA1E52844400251645 /* MaddenJonathan-hw4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFC40CF91E52844400251645 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC40D091E52844400251645 /* LaunchScreen.storyboard in Resources */,
+				EFC40D061E52844400251645 /* Assets.xcassets in Resources */,
+				EFC40D041E52844400251645 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFC40CF71E52844400251645 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF686D951E59365100CCBFAC /* AddressTableViewCell.swift in Sources */,
+				EF686D911E5935FD00CCBFAC /* ContactTableViewController.swift in Sources */,
+				EF686D8F1E5934BF00CCBFAC /* Person.swift in Sources */,
+				EFC40D011E52844400251645 /* ViewController.swift in Sources */,
+				EFC40CFF1E52844400251645 /* AppDelegate.swift in Sources */,
+				EF686D931E59363C00CCBFAC /* NameTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EFC40D021E52844400251645 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFC40D031E52844400251645 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFC40D071E52844400251645 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFC40D081E52844400251645 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFC40D0B1E52844400251645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFC40D0C1E52844400251645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFC40D0E1E52844400251645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "MaddenJonathan-hw4/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cs378.MaddenJonathan-hw4";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EFC40D0F1E52844400251645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "MaddenJonathan-hw4/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cs378.MaddenJonathan-hw4";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFC40CF61E52844400251645 /* Build configuration list for PBXProject "MaddenJonathan-hw4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFC40D0B1E52844400251645 /* Debug */,
+				EFC40D0C1E52844400251645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFC40D0D1E52844400251645 /* Build configuration list for PBXNativeTarget "MaddenJonathan-hw4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFC40D0E1E52844400251645 /* Debug */,
+				EFC40D0F1E52844400251645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFC40CF31E52844400251645 /* Project object */;
+}

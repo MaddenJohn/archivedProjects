@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8VL-GG-m9f">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gesturing-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="myViewController" customModule="MaddenJonathan_hw7" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i37-gK-mUq">
+                                <rect key="frame" x="138" y="292" width="98" height="83"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="VzV-P6-Vqy"/>
+                                    <constraint firstAttribute="height" constant="83" id="rLQ-XV-V83"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="i37-gK-mUq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="J6N-iS-MxW"/>
+                            <constraint firstItem="i37-gK-mUq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ojI-7D-HzQ"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Zq2-sg-rnY" appends="YES" id="IjG-Oi-u81"/>
+                            <outletCollection property="gestureRecognizers" destination="cuV-ro-n9b" appends="YES" id="Nts-eB-tEK"/>
+                            <outletCollection property="gestureRecognizers" destination="vOE-d2-2y2" appends="YES" id="tLi-k3-USE"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gesturing" id="oIt-K3-mCc"/>
+                    <connections>
+                        <outlet property="myLabel" destination="i37-gK-mUq" id="LDZ-OD-QFb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Zq2-sg-rnY">
+                    <connections>
+                        <action selector="swipeRight:" destination="BYZ-38-t0r" id="0UF-tg-AW1"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="cuV-ro-n9b">
+                    <connections>
+                        <action selector="swipeLeft:" destination="BYZ-38-t0r" id="M8s-UO-eJT"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer id="vOE-d2-2y2">
+                    <connections>
+                        <action selector="tapHandler:" destination="BYZ-38-t0r" id="O3z-Im-8NJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dqZ-8c-YnV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8VL-GG-m9f" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YAq-lt-Si9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ucy-bK-CMz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ncG-hU-xVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="137"/>
+        </scene>
+    </scenes>
+</document>

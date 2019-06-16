@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFCDBB831E64F40B0053EFA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDBB821E64F40B0053EFA2 /* AppDelegate.swift */; };
+		EFCDBB881E64F40B0053EFA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCDBB861E64F40B0053EFA2 /* Main.storyboard */; };
+		EFCDBB8A1E64F40B0053EFA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCDBB891E64F40B0053EFA2 /* Assets.xcassets */; };
+		EFCDBB8D1E64F40B0053EFA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCDBB8B1E64F40B0053EFA2 /* LaunchScreen.storyboard */; };
+		EFCDBB951E64F7ED0053EFA2 /* myViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDBB941E64F7ED0053EFA2 /* myViewController.swift */; };
+		EFCDBB971E64F8390053EFA2 /* myPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCDBB961E64F8390053EFA2 /* myPageViewController.swift */; };
+		EFCDBBA41E6798EC0053EFA2 /* wonders1.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCDBB9D1E6798EC0053EFA2 /* wonders1.png */; };
+		EFCDBBA51E6798EC0053EFA2 /* wonders2.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCDBB9E1E6798EC0053EFA2 /* wonders2.png */; };
+		EFCDBBA61E6798EC0053EFA2 /* wonders3.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCDBB9F1E6798EC0053EFA2 /* wonders3.png */; };
+		EFCDBBA71E6798EC0053EFA2 /* wonders4.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCDBBA01E6798EC0053EFA2 /* wonders4.png */; };
+		EFCDBBA81E6798EC0053EFA2 /* wonders5.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCDBBA11E6798EC0053EFA2 /* wonders5.png */; };
+		EFCDBBA91E6798EC0053EFA2 /* wonders6.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCDBBA21E6798EC0053EFA2 /* wonders6.png */; };
+		EFCDBBAA1E6798EC0053EFA2 /* wonders7.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCDBBA31E6798EC0053EFA2 /* wonders7.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EFCDBB7F1E64F40B0053EFA2 /* MaddenJonathan-hw6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MaddenJonathan-hw6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFCDBB821E64F40B0053EFA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFCDBB871E64F40B0053EFA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFCDBB891E64F40B0053EFA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFCDBB8C1E64F40B0053EFA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFCDBB8E1E64F40B0053EFA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFCDBB941E64F7ED0053EFA2 /* myViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myViewController.swift; sourceTree = "<group>"; };
+		EFCDBB961E64F8390053EFA2 /* myPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myPageViewController.swift; sourceTree = "<group>"; };
+		EFCDBB9D1E6798EC0053EFA2 /* wonders1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wonders1.png; path = "../../../../Downloads/CS378-Homework6Images/wonders1.png"; sourceTree = "<group>"; };
+		EFCDBB9E1E6798EC0053EFA2 /* wonders2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wonders2.png; path = "../../../../Downloads/CS378-Homework6Images/wonders2.png"; sourceTree = "<group>"; };
+		EFCDBB9F1E6798EC0053EFA2 /* wonders3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wonders3.png; path = "../../../../Downloads/CS378-Homework6Images/wonders3.png"; sourceTree = "<group>"; };
+		EFCDBBA01E6798EC0053EFA2 /* wonders4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wonders4.png; path = "../../../../Downloads/CS378-Homework6Images/wonders4.png"; sourceTree = "<group>"; };
+		EFCDBBA11E6798EC0053EFA2 /* wonders5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wonders5.png; path = "../../../../Downloads/CS378-Homework6Images/wonders5.png"; sourceTree = "<group>"; };
+		EFCDBBA21E6798EC0053EFA2 /* wonders6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wonders6.png; path = "../../../../Downloads/CS378-Homework6Images/wonders6.png"; sourceTree = "<group>"; };
+		EFCDBBA31E6798EC0053EFA2 /* wonders7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wonders7.png; path = "../../../../Downloads/CS378-Homework6Images/wonders7.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFCDBB7C1E64F40B0053EFA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFCDBB761E64F40B0053EFA2 = {
+			isa = PBXGroup;
+			children = (
+				EFCDBB811E64F40B0053EFA2 /* MaddenJonathan-hw6 */,
+				EFCDBB801E64F40B0053EFA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFCDBB801E64F40B0053EFA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDBB7F1E64F40B0053EFA2 /* MaddenJonathan-hw6.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFCDBB811E64F40B0053EFA2 /* MaddenJonathan-hw6 */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDBB9A1E64FFED0053EFA2 /* images */,
+				EFCDBB821E64F40B0053EFA2 /* AppDelegate.swift */,
+				EFCDBB941E64F7ED0053EFA2 /* myViewController.swift */,
+				EFCDBB961E64F8390053EFA2 /* myPageViewController.swift */,
+				EFCDBB861E64F40B0053EFA2 /* Main.storyboard */,
+				EFCDBB891E64F40B0053EFA2 /* Assets.xcassets */,
+				EFCDBB8B1E64F40B0053EFA2 /* LaunchScreen.storyboard */,
+				EFCDBB8E1E64F40B0053EFA2 /* Info.plist */,
+			);
+			path = "MaddenJonathan-hw6";
+			sourceTree = "<group>";
+		};
+		EFCDBB9A1E64FFED0053EFA2 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EFCDBB9D1E6798EC0053EFA2 /* wonders1.png */,
+				EFCDBB9E1E6798EC0053EFA2 /* wonders2.png */,
+				EFCDBB9F1E6798EC0053EFA2 /* wonders3.png */,
+				EFCDBBA01E6798EC0053EFA2 /* wonders4.png */,
+				EFCDBBA11E6798EC0053EFA2 /* wonders5.png */,
+				EFCDBBA21E6798EC0053EFA2 /* wonders6.png */,
+				EFCDBBA31E6798EC0053EFA2 /* wonders7.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFCDBB7E1E64F40B0053EFA2 /* MaddenJonathan-hw6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFCDBB911E64F40B0053EFA2 /* Build configuration list for PBXNativeTarget "MaddenJonathan-hw6" */;
+			buildPhases = (
+				EFCDBB7B1E64F40B0053EFA2 /* Sources */,
+				EFCDBB7C1E64F40B0053EFA2 /* Frameworks */,
+				EFCDBB7D1E64F40B0053EFA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MaddenJonathan-hw6";
+			productName = "MaddenJonathan-hw6";
+			productReference = EFCDBB7F1E64F40B0053EFA2 /* MaddenJonathan-hw6.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFCDBB771E64F40B0053EFA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = cs378;
+				TargetAttributes = {
+					EFCDBB7E1E64F40B0053EFA2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EFCDBB7A1E64F40B0053EFA2 /* Build configuration list for PBXProject "MaddenJonathan-hw6" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFCDBB761E64F40B0053EFA2;
+			productRefGroup = EFCDBB801E64F40B0053EFA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFCDBB7E1E64F40B0053EFA2 /* MaddenJonathan-hw6 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFCDBB7D1E64F40B0053EFA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCDBBA91E6798EC0053EFA2 /* wonders6.png in Resources */,
+				EFCDBBA61E6798EC0053EFA2 /* wonders3.png in Resources */,
+				EFCDBBAA1E6798EC0053EFA2 /* wonders7.png in Resources */,
+				EFCDBB8D1E64F40B0053EFA2 /* LaunchScreen.storyboard in Resources */,
+				EFCDBB8A1E64F40B0053EFA2 /* Assets.xcassets in Resources */,
+				EFCDBBA51E6798EC0053EFA2 /* wonders2.png in Resources */,
+				EFCDBBA41E6798EC0053EFA2 /* wonders1.png in Resources */,
+				EFCDBBA71E6798EC0053EFA2 /* wonders4.png in Resources */,
+				EFCDBBA81E6798EC0053EFA2 /* wonders5.png in Resources */,
+				EFCDBB881E64F40B0053EFA2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFCDBB7B1E64F40B0053EFA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCDBB951E64F7ED0053EFA2 /* myViewController.swift in Sources */,
+				EFCDBB831E64F40B0053EFA2 /* AppDelegate.swift in Sources */,
+				EFCDBB971E64F8390053EFA2 /* myPageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EFCDBB861E64F40B0053EFA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFCDBB871E64F40B0053EFA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFCDBB8B1E64F40B0053EFA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFCDBB8C1E64F40B0053EFA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFCDBB8F1E64F40B0053EFA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFCDBB901E64F40B0053EFA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFCDBB921E64F40B0053EFA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "MaddenJonathan-hw6/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cs378.MaddenJonathan-hw6";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EFCDBB931E64F40B0053EFA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "MaddenJonathan-hw6/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cs378.MaddenJonathan-hw6";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFCDBB7A1E64F40B0053EFA2 /* Build configuration list for PBXProject "MaddenJonathan-hw6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFCDBB8F1E64F40B0053EFA2 /* Debug */,
+				EFCDBB901E64F40B0053EFA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFCDBB911E64F40B0053EFA2 /* Build configuration list for PBXNativeTarget "MaddenJonathan-hw6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFCDBB921E64F40B0053EFA2 /* Debug */,
+				EFCDBB931E64F40B0053EFA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFCDBB771E64F40B0053EFA2 /* Project object */;
+}

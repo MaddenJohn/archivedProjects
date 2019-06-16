@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF4BFDC81EA5BF49003A68D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BFDC71EA5BF49003A68D5 /* AppDelegate.swift */; };
+		EF4BFDCA1EA5BF49003A68D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BFDC91EA5BF49003A68D5 /* ViewController.swift */; };
+		EF4BFDCD1EA5BF49003A68D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4BFDCB1EA5BF49003A68D5 /* Main.storyboard */; };
+		EF4BFDCF1EA5BF49003A68D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4BFDCE1EA5BF49003A68D5 /* Assets.xcassets */; };
+		EF4BFDD21EA5BF49003A68D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4BFDD01EA5BF49003A68D5 /* LaunchScreen.storyboard */; };
+		EF4BFDD71EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EF4BFDD61EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit App.app */; };
+		EF4BFDDD1EA5BF49003A68D5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF4BFDDB1EA5BF49003A68D5 /* Interface.storyboard */; };
+		EF4BFDDF1EA5BF49003A68D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4BFDDE1EA5BF49003A68D5 /* Assets.xcassets */; };
+		EF4BFDE61EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EF4BFDE51EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EF4BFDEB1EA5BF49003A68D5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BFDEA1EA5BF49003A68D5 /* InterfaceController.swift */; };
+		EF4BFDED1EA5BF49003A68D5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4BFDEC1EA5BF49003A68D5 /* ExtensionDelegate.swift */; };
+		EF4BFDEF1EA5BF49003A68D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF4BFDEE1EA5BF49003A68D5 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF4BFDD81EA5BF49003A68D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF4BFDBC1EA5BF49003A68D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF4BFDD51EA5BF49003A68D5;
+			remoteInfo = "MaddenJonathan-hw9 WatchKit App";
+		};
+		EF4BFDE71EA5BF49003A68D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF4BFDBC1EA5BF49003A68D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF4BFDE41EA5BF49003A68D5;
+			remoteInfo = "MaddenJonathan-hw9 WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EF4BFDF61EA5BF49003A68D5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EF4BFDE61EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4BFDFA1EA5BF49003A68D5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EF4BFDD71EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EF4BFDC41EA5BF49003A68D5 /* MaddenJonathan-hw9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MaddenJonathan-hw9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4BFDC71EA5BF49003A68D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF4BFDC91EA5BF49003A68D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF4BFDCC1EA5BF49003A68D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF4BFDCE1EA5BF49003A68D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF4BFDD11EA5BF49003A68D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF4BFDD31EA5BF49003A68D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF4BFDD61EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MaddenJonathan-hw9 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4BFDDC1EA5BF49003A68D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EF4BFDDE1EA5BF49003A68D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF4BFDE01EA5BF49003A68D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF4BFDE51EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MaddenJonathan-hw9 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4BFDEA1EA5BF49003A68D5 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		EF4BFDEC1EA5BF49003A68D5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EF4BFDEE1EA5BF49003A68D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF4BFDF01EA5BF49003A68D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF4BFDC11EA5BF49003A68D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4BFDE21EA5BF49003A68D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF4BFDBB1EA5BF49003A68D5 = {
+			isa = PBXGroup;
+			children = (
+				EF4BFDC61EA5BF49003A68D5 /* MaddenJonathan-hw9 */,
+				EF4BFDDA1EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit App */,
+				EF4BFDE91EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit Extension */,
+				EF4BFDC51EA5BF49003A68D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF4BFDC51EA5BF49003A68D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF4BFDC41EA5BF49003A68D5 /* MaddenJonathan-hw9.app */,
+				EF4BFDD61EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit App.app */,
+				EF4BFDE51EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF4BFDC61EA5BF49003A68D5 /* MaddenJonathan-hw9 */ = {
+			isa = PBXGroup;
+			children = (
+				EF4BFDC71EA5BF49003A68D5 /* AppDelegate.swift */,
+				EF4BFDC91EA5BF49003A68D5 /* ViewController.swift */,
+				EF4BFDCB1EA5BF49003A68D5 /* Main.storyboard */,
+				EF4BFDCE1EA5BF49003A68D5 /* Assets.xcassets */,
+				EF4BFDD01EA5BF49003A68D5 /* LaunchScreen.storyboard */,
+				EF4BFDD31EA5BF49003A68D5 /* Info.plist */,
+			);
+			path = "MaddenJonathan-hw9";
+			sourceTree = "<group>";
+		};
+		EF4BFDDA1EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EF4BFDDB1EA5BF49003A68D5 /* Interface.storyboard */,
+				EF4BFDDE1EA5BF49003A68D5 /* Assets.xcassets */,
+				EF4BFDE01EA5BF49003A68D5 /* Info.plist */,
+			);
+			path = "MaddenJonathan-hw9 WatchKit App";
+			sourceTree = "<group>";
+		};
+		EF4BFDE91EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EF4BFDEA1EA5BF49003A68D5 /* InterfaceController.swift */,
+				EF4BFDEC1EA5BF49003A68D5 /* ExtensionDelegate.swift */,
+				EF4BFDEE1EA5BF49003A68D5 /* Assets.xcassets */,
+				EF4BFDF01EA5BF49003A68D5 /* Info.plist */,
+			);
+			path = "MaddenJonathan-hw9 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF4BFDC31EA5BF49003A68D5 /* MaddenJonathan-hw9 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF4BFDFB1EA5BF49003A68D5 /* Build configuration list for PBXNativeTarget "MaddenJonathan-hw9" */;
+			buildPhases = (
+				EF4BFDC01EA5BF49003A68D5 /* Sources */,
+				EF4BFDC11EA5BF49003A68D5 /* Frameworks */,
+				EF4BFDC21EA5BF49003A68D5 /* Resources */,
+				EF4BFDFA1EA5BF49003A68D5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF4BFDD91EA5BF49003A68D5 /* PBXTargetDependency */,
+			);
+			name = "MaddenJonathan-hw9";
+			productName = "MaddenJonathan-hw9";
+			productReference = EF4BFDC41EA5BF49003A68D5 /* MaddenJonathan-hw9.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF4BFDD51EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF4BFDF71EA5BF49003A68D5 /* Build configuration list for PBXNativeTarget "MaddenJonathan-hw9 WatchKit App" */;
+			buildPhases = (
+				EF4BFDD41EA5BF49003A68D5 /* Resources */,
+				EF4BFDF61EA5BF49003A68D5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF4BFDE81EA5BF49003A68D5 /* PBXTargetDependency */,
+			);
+			name = "MaddenJonathan-hw9 WatchKit App";
+			productName = "MaddenJonathan-hw9 WatchKit App";
+			productReference = EF4BFDD61EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EF4BFDE41EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF4BFDF31EA5BF49003A68D5 /* Build configuration list for PBXNativeTarget "MaddenJonathan-hw9 WatchKit Extension" */;
+			buildPhases = (
+				EF4BFDE11EA5BF49003A68D5 /* Sources */,
+				EF4BFDE21EA5BF49003A68D5 /* Frameworks */,
+				EF4BFDE31EA5BF49003A68D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MaddenJonathan-hw9 WatchKit Extension";
+			productName = "MaddenJonathan-hw9 WatchKit Extension";
+			productReference = EF4BFDE51EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF4BFDBC1EA5BF49003A68D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = cs378;
+				TargetAttributes = {
+					EF4BFDC31EA5BF49003A68D5 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					EF4BFDD51EA5BF49003A68D5 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					EF4BFDE41EA5BF49003A68D5 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EF4BFDBF1EA5BF49003A68D5 /* Build configuration list for PBXProject "MaddenJonathan-hw9" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF4BFDBB1EA5BF49003A68D5;
+			productRefGroup = EF4BFDC51EA5BF49003A68D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF4BFDC31EA5BF49003A68D5 /* MaddenJonathan-hw9 */,
+				EF4BFDD51EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit App */,
+				EF4BFDE41EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF4BFDC21EA5BF49003A68D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4BFDD21EA5BF49003A68D5 /* LaunchScreen.storyboard in Resources */,
+				EF4BFDCF1EA5BF49003A68D5 /* Assets.xcassets in Resources */,
+				EF4BFDCD1EA5BF49003A68D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4BFDD41EA5BF49003A68D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4BFDDF1EA5BF49003A68D5 /* Assets.xcassets in Resources */,
+				EF4BFDDD1EA5BF49003A68D5 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4BFDE31EA5BF49003A68D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4BFDEF1EA5BF49003A68D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF4BFDC01EA5BF49003A68D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4BFDCA1EA5BF49003A68D5 /* ViewController.swift in Sources */,
+				EF4BFDC81EA5BF49003A68D5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF4BFDE11EA5BF49003A68D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF4BFDED1EA5BF49003A68D5 /* ExtensionDelegate.swift in Sources */,
+				EF4BFDEB1EA5BF49003A68D5 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF4BFDD91EA5BF49003A68D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF4BFDD51EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit App */;
+			targetProxy = EF4BFDD81EA5BF49003A68D5 /* PBXContainerItemProxy */;
+		};
+		EF4BFDE81EA5BF49003A68D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF4BFDE41EA5BF49003A68D5 /* MaddenJonathan-hw9 WatchKit Extension */;
+			targetProxy = EF4BFDE71EA5BF49003A68D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF4BFDCB1EA5BF49003A68D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF4BFDCC1EA5BF49003A68D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF4BFDD01EA5BF49003A68D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF4BFDD11EA5BF49003A68D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EF4BFDDB1EA5BF49003A68D5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF4BFDDC1EA5BF49003A68D5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF4BFDF11EA5BF49003A68D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF4BFDF21EA5BF49003A68D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF4BFDF41EA5BF49003A68D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "MaddenJonathan-hw9 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cs378.MaddenJonathan-hw9.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		EF4BFDF51EA5BF49003A68D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "MaddenJonathan-hw9 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cs378.MaddenJonathan-hw9.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		EF4BFDF81EA5BF49003A68D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = MaddenJonathan_hw9_WatchKit_Extension;
+				INFOPLIST_FILE = "MaddenJonathan-hw9 WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cs378.MaddenJonathan-hw9.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		EF4BFDF91EA5BF49003A68D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = MaddenJonathan_hw9_WatchKit_Extension;
+				INFOPLIST_FILE = "MaddenJonathan-hw9 WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cs378.MaddenJonathan-hw9.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		EF4BFDFC1EA5BF49003A68D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "MaddenJonathan-hw9/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cs378.MaddenJonathan-hw9";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EF4BFDFD1EA5BF49003A68D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "MaddenJonathan-hw9/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cs378.MaddenJonathan-hw9";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF4BFDBF1EA5BF49003A68D5 /* Build configuration list for PBXProject "MaddenJonathan-hw9" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF4BFDF11EA5BF49003A68D5 /* Debug */,
+				EF4BFDF21EA5BF49003A68D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF4BFDF31EA5BF49003A68D5 /* Build configuration list for PBXNativeTarget "MaddenJonathan-hw9 WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF4BFDF41EA5BF49003A68D5 /* Debug */,
+				EF4BFDF51EA5BF49003A68D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF4BFDF71EA5BF49003A68D5 /* Build configuration list for PBXNativeTarget "MaddenJonathan-hw9 WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF4BFDF81EA5BF49003A68D5 /* Debug */,
+				EF4BFDF91EA5BF49003A68D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF4BFDFB1EA5BF49003A68D5 /* Build configuration list for PBXNativeTarget "MaddenJonathan-hw9" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF4BFDFC1EA5BF49003A68D5 /* Debug */,
+				EF4BFDFD1EA5BF49003A68D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF4BFDBC1EA5BF49003A68D5 /* Project object */;
+}

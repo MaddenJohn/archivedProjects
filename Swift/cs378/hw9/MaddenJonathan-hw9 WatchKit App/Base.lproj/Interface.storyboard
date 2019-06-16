@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5kp-8v-Hmp">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="2gL-xJ-yVx">
+            <objects>
+                <controller id="5kp-8v-Hmp" customClass="InterfaceController" customModule="MaddenJonathan_hw9_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" alignment="center" text="My Watch App" textAlignment="center" id="TFi-y6-hxL">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <separator alignment="left" id="YZA-5f-5WD"/>
+                        <label alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="hQZ-T8-alm">
+                            <color key="textColor" red="0.99975723029999997" green="0.63767570259999995" blue="0.24548235539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Button" id="zfb-Bs-XnI">
+                            <color key="titleColor" red="0.113708131" green="0.1137354299" blue="0.11370643229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.4426450542" green="1" blue="0.44715283509999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="btnAction" destination="5kp-8v-Hmp" id="3gN-2q-MqC"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" verticalAlignment="bottom" alpha="0.0" id="fa2-x0-SJB"/>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="hQZ-T8-alm" id="M8O-eG-ldv"/>
+                        <outlet property="seperator" destination="fa2-x0-SJB" id="Cyh-w1-Zs6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="80" y="175"/>
+        </scene>
+    </scenes>
+</document>
