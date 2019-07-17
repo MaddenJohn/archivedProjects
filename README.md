@@ -8,7 +8,7 @@ Notable projects can be found below:
 
 # Java
 * https://github.com/MaddenJohn/archivedProjects/blob/master/Java/CS361/jm76685_project5/AES.java - Java, This is entirely written by me. Using this project you can encrypt files using the AES 256 military grade encryption standard
-* https://github.com/MaddenJohn/archivedProjects/tree/master/Java/Tron/src - Simple Java program for the Ligh bikes game that you can find on the internet 
+* https://github.com/MaddenJohn/archivedProjects/tree/master/Java/Tron/src - Simple Java program for the light bikes (Tron) game that you can find on the internet 
 * https://github.com/MaddenJohn/archivedProjects/tree/master/Java/huffman - Huffman compressor. Compressed some files up to 80%.
 
 # Python
